@@ -1,0 +1,125 @@
+.mobile-nav {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  position: relative;
+}
+.mobile-nav h1 {
+  flex-grow: 1;
+}
+.hide,
+.desktop-nav {
+  display: none;
+}
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.mobile-menu .menus {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: white;
+  max-width: 250px;
+  padding: 25px;
+  color: gray;
+}
+.mobile-menu .menus ul {
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mobile-menu .menus div:nth-child(1) {
+  text-align: end;
+  margin-bottom: 15px;
+}
+.mobile-menu .menus li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mobile-menu .menus .login-register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.mobile-menu .menus .register {
+  padding: 10px 55px;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+#features,
+#company {
+  position: relative;
+}
+#features .features-menu,
+#company .company-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  gap: 10px;
+  background-color: white;
+  width: 120px;
+  border-radius: 5px;
+  padding: 10px;
+  top: 20px;
+  left: 10px;
+  font-size: 12px;
+  box-shadow: 0px 5px 10px rgb(226, 219, 219);
+}
+@media screen and (min-width: 1240px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+  }
+  .desktop-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 50px;
+  }
+  .desktop-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    font-size: 14px;
+    align-items: flex-end;
+    color: gray;
+  }
+  .desktop-menu ul li {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    cursor: pointer;
+  }
+  .desktop-menu h1 {
+    font-size: 36px;
+  }
+  .desktop-nav .login-register {
+    display: flex;
+    gap: 20px;
+    color: gray;
+    font-size: 18px;
+    align-items: center;
+  }
+  .desktop-nav .register {
+    padding: 10px 35px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
