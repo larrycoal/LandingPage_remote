@@ -70,6 +70,9 @@ html,
   gap: 15px;
   padding: 0 10px;
 }
+.hero-content .logos img {
+  height: 15px;
+}
 @media screen and (min-width: 1240px) {
   .hero-wrapper {
     flex-direction: row;
@@ -104,5 +107,8 @@ html,
   }
   #desktop {
     display: inline;
+  }
+  .hero-content .logos img {
+    height: 22px;
   }
 }
