@@ -17,7 +17,8 @@ html,
   display: inline;
 }
 .main-wrapper {
-  height: fit-content;
+  height: 100%;
+  padding: 1rem 0;
 }
 .hero-wrapper {
   display: flex;
@@ -110,5 +111,10 @@ html,
   }
   .hero-content .logos img {
     height: 22px;
+  }
+}
+@media screen and (min-width: 958px) {
+  .hero-image {
+    height: fit-content;
   }
 }
